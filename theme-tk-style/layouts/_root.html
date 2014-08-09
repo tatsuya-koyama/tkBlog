@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> meta.html }}
+
+  {{# stylesheets.load }}
+    bootstrap.min.css
+    bootstrap-responsive.min.css
+    google_prettify/sunburst-custom.css
+    tk-style.css
+    tk-style-portal.css
+  {{/ stylesheets.load }}
+
+</head>
+<body>
+
+  {{> header.html }}
+
+  <div class="container">
+    <div class="row">
+      <div class="span10"><div id="contents-pane">
+
+        <h1>Tatsuya Koyama <br/> Game Programmer</h1>
+
+        {{# posts.paginator }}
+        <div class="row">
+          <div class="span2">
+
+            <h1>
+              {{ date.year }}<br/>
+              {{ date.month }}/{{ date.day }}
+            </h1>
+
+          </div>
+          <div class="span8">
+
+              <div class="page">
+                <h1><a href="{{url}}">{{title}}</a></h1>
+                  {{{ summary }}}
+                <div class="more">
+                  <a href="{{url}}" class="btn">read more..</a>
+                </div>
+              </div>
+
+          </div>
+        </div>
+        <hr style="margin: 1.5em 0 0 0;"/>
+        {{/ posts.paginator }}
+
+      </div></div>
+      <div class="span2"><div id="menu-pane">
+
+        {{> menu.html }}
+
+      </div></div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span12">
+        {{#posts.paginator_navigation}}
+          {{^is_active_page}}
+            <a href="{{url}}">{{name}}</a>
+          {{/is_active_page}}
+
+          {{#is_active_page}}
+            {{name}}
+          {{/is_active_page}}
+        {{/posts.paginator_navigation}}
+      </div>
+    </div>
+  </div>
+
+
+  {{> footer.html }}
+
+  {{> common-widgets.html }}
+
+  </body>
+</html>

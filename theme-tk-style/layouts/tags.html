@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> meta.html }}
+
+  {{# stylesheets.load }}
+    bootstrap.min.css
+    bootstrap-responsive.min.css
+    google_prettify/sunburst-custom.css
+    tk-style.css
+    tk-style-portal.css
+  {{/ stylesheets.load }}
+
+</head>
+<body>
+
+  {{> header.html }}
+
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span3"><div id="outline-pane">
+          <h2>Tags</h2>
+          <ul>
+            {{# posts.tags.all }}
+              <li><a href="#{{ name }}">{{ name }} ({{ count }})</a></li>
+            {{/ posts.tags.all }}
+          </ul>
+      </div></div>
+      <div class="span7"><div id="contents-pane">
+
+        <br/>
+        {{# posts.tags.all }}
+        <h3 id="{{ name }}">{{ name }} ({{ count }})</h3>
+        <ul>
+          {{# posts?to_posts.sort }}
+            <li>{{ date }} &raquo; <a href="{{ url }}">{{ title }}</a></li>
+          {{/ posts?to_posts.sort }}
+        </ul>
+        {{/ posts.tags.all }}
+
+      </div></div>
+      <div class="span2"><div id="menu-pane">
+
+        {{> menu.html }}
+
+      </div></div>
+    </div>
+  </div>
+
+  {{> footer.html }}
+
+  {{> common-widgets.html }}
+
+  </body>
+</html>

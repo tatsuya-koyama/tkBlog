@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> meta.html }}
+
+  {{# stylesheets.load }}
+    bootstrap.min.css
+    bootstrap-responsive.min.css
+    google_prettify/sunburst-custom.css
+    tk-style.css
+    tk-style-portal.css
+  {{/ stylesheets.load }}
+
+</head>
+<body>
+
+  {{> header.html }}
+
+  <div class="container">
+    <div class="row">
+      <div class="span2"><div id="outline-pane">
+          <h2>Timeline</h2>
+          <ul>
+            {{# posts.collated }}
+              <li><a href="#{{year}}">{{year}}</a></li>
+            {{/ posts.collated }}
+          </ul>
+      </div></div>
+      <div class="span8"><div id="contents-pane">
+
+        <br/>
+        {{# posts.collated }}
+          {{> my-posts-collate }}
+        {{/ posts.collated }}
+
+      </div></div>
+      <div class="span2"><div id="menu-pane">
+
+        {{> menu.html }}
+
+      </div></div>
+    </div>
+  </div>
+
+  {{> footer.html }}
+
+  {{> common-widgets.html }}
+
+  </body>
+</html>
