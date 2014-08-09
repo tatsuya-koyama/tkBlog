@@ -1,0 +1,25 @@
+  <div id="paginator">
+    <div class="container">
+      <div class="row">
+
+        <div class="span2"></div>
+
+        <div class="span8" style="text-align: center;">
+          <ul class="paginator">
+            {{#posts.paginator_navigation}}
+              <li>
+              {{^is_active_page}}
+                <a href="{{url}}">{{name}}</a>
+              {{/is_active_page}}
+
+              {{#is_active_page}}
+                {{name}}
+              {{/is_active_page}}
+              </li>
+            {{/posts.paginator_navigation}}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>

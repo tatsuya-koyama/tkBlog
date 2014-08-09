@@ -19,16 +19,18 @@
   <div class="container">
     <div class="row">
       <div class="span3"><div id="outline-pane">
-          <h2>Categories</h2>
-          <ul>
-          {{# posts.categories.all }}
-            <li><a href="#{{ name }}">{{ name }} ({{ count }})</a></li>
-          {{/ posts.categories.all }}
-          </ul>
+          <h2 class="outline">Categories</h2>
+          <div class="outline-block radius">
+            <ul>
+              {{# posts.categories.all }}
+                <li><a href="#{{ name }}">{{ name }} ({{ count }})</a></li>
+                {{/ posts.categories.all }}
+            </ul>
+          </div>
       </div></div>
       <div class="span7"><div id="contents-pane">
 
-        </br>
+        <div style="padding-top: 2.7em;"></div>
         {{# posts.categories.all }}
         <h3 id="{{ name }}">{{ name }} ({{ count }})</h3>
         <ul>

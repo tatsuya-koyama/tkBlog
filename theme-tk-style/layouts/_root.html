@@ -20,31 +20,30 @@
     <div class="row">
       <div class="span10"><div id="contents-pane">
 
-        <h1>Tatsuya Koyama <br/> Game Programmer</h1>
+        {{> site-title.html }}
 
         {{# posts.paginator }}
+        <hr style="margin: 1.5em 0 1.0em 0;"/>
         <div class="row">
           <div class="span2">
 
-            <h1>
-              {{ date.year }}<br/>
-              {{ date.month }}/{{ date.day }}
-            </h1>
+            {{> date-block.html }}
 
           </div>
           <div class="span8">
 
               <div class="page">
-                <h1><a href="{{url}}">{{title}}</a></h1>
+                <div class="summary-block radius">
+                <h1 class="headline-title"><a href="{{url}}">{{title}}</a></h1>
                   {{{ summary }}}
+                </div>
                 <div class="more">
-                  <a href="{{url}}" class="btn">read more..</a>
+                  <a href="{{url}}" class="btn read-more-btn pull-right">Read More...</a>
                 </div>
               </div>
 
           </div>
         </div>
-        <hr style="margin: 1.5em 0 0 0;"/>
         {{/ posts.paginator }}
 
       </div></div>
@@ -56,23 +55,7 @@
     </div>
   </div>
 
-
-  <div class="container">
-    <div class="row-fluid">
-      <div class="span12">
-        {{#posts.paginator_navigation}}
-          {{^is_active_page}}
-            <a href="{{url}}">{{name}}</a>
-          {{/is_active_page}}
-
-          {{#is_active_page}}
-            {{name}}
-          {{/is_active_page}}
-        {{/posts.paginator_navigation}}
-      </div>
-    </div>
-  </div>
-
+  {{> paginator.html }}
 
   {{> footer.html }}
 

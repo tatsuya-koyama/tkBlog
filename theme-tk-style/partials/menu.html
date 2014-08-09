@@ -1,12 +1,14 @@
         <h2>Menu</h2>
-        <b>
-        <p><a href="{{ urls.base_path }}">Latest</a></p>
-        <p><a href="{{ urls.base_path }}timeline/">Timeline</a></p>
-        <p><a href="{{ urls.base_path }}categories/">Categories</a></p>
-        <p><a href="{{ urls.base_path }}tags/">Tags</a></p>
+        <ul class="sidebar-menu">
+          <li><a href="{{ urls.base_path }}">Latest</a></li>
+          <li><a href="{{ urls.base_path }}timeline/">Timeline</a></li>
+          <li><a href="{{ urls.base_path }}categories/">Categories</a></li>
+          <li><a href="{{ urls.base_path }}tags/">Tags</a></li>
+        </ul>
         <hr/>
-        <p><a href="{{ urls.base_path }}posts/rss.xml">RSS</a></p>
-        </b>
+        <ul class="sidebar-menu">
+          <li><a href="{{ urls.base_path }}posts/rss.xml">RSS</a></li>
+        </ul>
 
 
 

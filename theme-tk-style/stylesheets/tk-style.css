@@ -10,13 +10,13 @@ body{
 }
 
 #outline-pane {
-    padding-top  : 3.0em;
+    padding-top  : 5.0em;
     padding-left : 0%;
     padding-right: 0%;
 }
 
 #menu-pane {
-    padding-top  : 4.5em;
+    padding-top  : 3.8em;
     padding-left : 0%;
     padding-right: 0%;
 }
@@ -25,6 +25,19 @@ body{
     padding-top  : 2.0em;
     padding-left : 0%;
     padding-right: 0%;
+}
+
+div#paginator {
+    margin-top: 3.0em;
+    padding: 2.0em 0 2.0em 0;
+    background-color: #ecdfc0;
+}
+
+div#page-navigation {
+    font-weight: bold;
+    margin-top: 1.0em;
+    padding: 2.0em 0 2.0em 0;
+    background-color: #dee9ba;
 }
 
 #novel {
@@ -74,12 +87,26 @@ body{
 @media all and (min-width: 860px) { #left-pane {display:block !important }}
 
 
-div.posts-collate {padding-top: 0.5em;}
+div.posts-collate {padding-top: 0.8em;}
 div.posts-collate ul{
+    margin-top : 0;
     margin-left: 0;
 }
 
+ul.sidebar-menu {
+    margin-left: 0.5em;
+    font-weight: bold;
+    list-style-type: none;
+}
+ul.sidebar-menu li {
+    margin-bottom: 0.9em;
+}
 
+ul.paginator li {
+    font-weight: bold;
+    display: inline;
+    padding: 0 0.5em 0 0.5em;
+}
 
 /*-----------------------------------------------------------*/
 div#novel{
@@ -99,6 +126,14 @@ h1{
     margin: 1.3em 0 0.9em 0;
 }
 
+h1.post-title {
+    margin: 1.8em 0 1.5em 0em;
+}
+
+h1.headline-title {
+    margin: 0.42em 0 0.7em 0.3em;
+}
+
 h2{
     width: 100%;
     color: #555;
@@ -109,19 +144,9 @@ h2{
     border-bottom: 1px solid #999;
 }
 
-h2.old{
-    width: 98%;
-    /*max-width: 36em;*/
-    background-color: #666;
-    color: #fff;
-    font-size  : 160%;
-    line-height: 150%;
-    font-weight: normal;
-    text-align : left;
-    border-left  : 2px solid #333;
-    border-bottom: 1px solid #333;
-    margin: 2.3em 0 1.0em 0;
-    padding: 0.1em 0 0.1em 0.7em;
+h2.outline {
+    border: none;
+    margin: 0.8em 0 0.6em 0;
 }
 
 h3{
@@ -137,17 +162,26 @@ h3{
     padding-left : 0.5em;
 }
 
+h3.timeline-month {
+    margin: 0.5em 0 0.5em 0;
+}
+
 h4{
     width: 70%;
     max-width: 40em;
-    color: #333;
+    color: #555;
     font-size  : 115%;
     line-height: 150%;
     font-weight: bold;
     text-align : left;
-    border-bottom: 1px solid #8a3;
-    margin: 2.5em 0 1.5em 0em;
-    padding-left : 0.5em;
+    border-bottom: 1px solid #bbb;
+    margin: 1.0em 0 0.8em 0em;
+    padding-left : 0.1em;
+}
+
+h4.outline {
+    width: 98%;
+    color: #aaa;
 }
 
 h4.flash-modal {
@@ -211,7 +245,7 @@ div.footer{
     background-color: #444;
     height: auto;
     min-height: 100px;
-    margin-top: 4.0em;
+    margin-top: 0em;
     padding: 0.5em 0 0 15%;
     border-top: 1px solid #aaa;
 }
@@ -488,8 +522,8 @@ a.flash-modal-btn {
     border-radius        : 10px;
 }
 
-a.large-btn {
-    font-size  : 150%;
+a.read-more-btn {
+    font-size  : 120%;
     padding    : 0.7em 2.0em 0.5em 2.0em;
     line-height: normal;
     -webkit-border-radius: 10px;
@@ -500,6 +534,73 @@ a.large-btn {
 ul.flash-modal {
     margin: 0 0 0 3.0em;
     color: #888;
+}
+
+/*-----------------------------------------------------------*/
+div#site-title {
+    margin: 1.8em 0 2.0em 0;
+}
+span.site-title {
+    font-size: 200%;
+    color: #555;
+    font-weight: bold;
+}
+span.job {
+    font-size: 130%;
+    color: #84b60f;
+    font-weight: bold;
+}
+
+div.summary-block {
+    font-size: 90%;
+    background-color: #f8f8f8;
+    margin-bottom: 0.5em;
+    padding: 0.4em 1.5em 0.4em 1.5em;
+    border: 1px solid #ddd;
+}
+
+div.summary h2 {
+    font-size: 140%;
+    line-height: 150%;
+    margin-top: 0.3em;
+}
+
+div.outline-block {
+    background-color: #e3e3e3;
+    padding: 0.9em 0 0.9em 0;
+    border: 1px solid #d8d8d8;
+}
+
+div.outline-block ul {
+    margin: 0 0 0 2.2em;
+}
+
+/*-----------------------------------------------------------*/
+div.radius {
+    border-radius:         10px; /* CSS3 */
+    -webkit-border-radius: 10px; /* Safari, Chrome */
+    -moz-border-radius:    10px; /* Firefox */
+}
+
+div.date-block {
+    background-color: #84b60f;
+    color: #fff;
+    padding: 0.7em 0 1.0em 0;
+}
+
+p.date-block-day {
+    font-size: 180%;
+    line-height: 150%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+p.date-block-year {
+    font-size: 120%;
+    line-height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 

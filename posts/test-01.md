@@ -1,5 +1,5 @@
 ---
-title: 'test-01'
+title: 'ここにタイトル名が入るのだろう'
 date: '2013-12-01'
 description:
 categories: [TestCategory]

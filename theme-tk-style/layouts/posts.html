@@ -19,33 +19,25 @@
   <div class="container">
     <div class="row">
       <div class="span2"><div id="outline-pane">
-          <h1>
-            {{ page.date.year }}<br/>
-            {{ page.date.month }}/{{ page.date.day }}
-          </h1>
-          あああああああああああああああああああああああああああああああああああああああああああああ
-      </div></div>
-      <div class="span8"><div id="contents-pane">
 
-        <h1>{{ page.title }}</h1>
+          {{> page-date-block.html }}
 
-        <p>
-          Posted: {{ page.date }}
-
-          | Category:
+          <h4 class="outline">Category</h4>
           {{# page.categories }}
             <a href="/categories#{{ name }}">{{ name }}</a>
           {{/ page.categories }}
 
-          | Tags:
+          <h4 class="outline">Tags</h4>
           {{# page.tags }}
-            <a href="/tags#{{ name }}">{{ name }}</a>
+            <a href="/tags#{{ name }}">#{{ name }}</a><br/>
           {{/ page.tags }}
-        </p>
+
+      </div></div>
+      <div class="span8"><div id="contents-pane">
+
+        <h1 class="post-title">{{ page.title }}</h1>
 
         {{{ content }}}
-
-        {{> page-prev-next.html }}
 
       </div></div>
       <div class="span2"><div id="menu-pane">
@@ -56,6 +48,7 @@
     </div>
   </div>
 
+  {{> page-prev-next.html }}
 
   {{> footer.html }}
 

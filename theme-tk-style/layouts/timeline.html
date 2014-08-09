@@ -19,16 +19,18 @@
   <div class="container">
     <div class="row">
       <div class="span2"><div id="outline-pane">
-          <h2>Timeline</h2>
-          <ul>
-            {{# posts.collated }}
-              <li><a href="#{{year}}">{{year}}</a></li>
-            {{/ posts.collated }}
-          </ul>
+          <h2 class="outline">Timeline</h2>
+          <div class="outline-block radius">
+            <ul>
+              {{# posts.collated }}
+                <li><a href="#{{year}}">{{year}}</a></li>
+              {{/ posts.collated }}
+            </ul>
+          </div>
       </div></div>
       <div class="span8"><div id="contents-pane">
 
-        <br/>
+        <div style="padding-top: 1.8em;"></div>
         {{# posts.collated }}
           {{> my-posts-collate }}
         {{/ posts.collated }}
