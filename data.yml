@@ -1,4 +1,4 @@
-title : 俺式4.0 weblog
+title : 俺式4.0 Blog
 tagline: Blog Tagline
 author :
   name : Tatsuya Koyama
@@ -7,9 +7,6 @@ author :
   twitter : tatsuya_koyama
 
 navigation :
-  - archive
   - tags
   - categories
-  - pages
-  - about
 
