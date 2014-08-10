@@ -6,6 +6,8 @@
 
         <div class="span8" style="text-align: center;">
           <ul class="paginator">
+            <li style="color: #ca7;">&laquo;</li>
+
             {{#posts.paginator_navigation}}
               <li>
               {{^is_active_page}}
@@ -17,6 +19,8 @@
               {{/is_active_page}}
               </li>
             {{/posts.paginator_navigation}}
+
+            <li style="color: #ca7;">&raquo;</li>
           </ul>
         </div>
 

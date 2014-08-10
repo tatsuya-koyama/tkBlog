@@ -40,6 +40,12 @@ div#page-navigation {
     background-color: #dee9ba;
 }
 
+div#pre-footer {
+    margin-top: 1.0em;
+    padding: 2.0em 0 2.0em 0;
+    background-color: #ccc;
+}
+
 #novel {
     padding-top: 0px;
     position:relative;
@@ -163,6 +169,8 @@ h3{
 }
 
 h3.timeline-month {
+    color: #999;
+    border-bottom: 1px solid #ccc;
     margin: 0.5em 0 0.5em 0;
 }
 
@@ -218,6 +226,10 @@ hr {
     margin: 2.0em 5% 2.0em 5%;
     background-color: #fdfdfd;
     border-top: 2px dotted #aaa;
+}
+
+hr.menu {
+    margin: 0.7em 0 0.7em 0;
 }
 
 span.headline-date {
@@ -566,7 +578,7 @@ div.summary h2 {
 }
 
 div.outline-block {
-    background-color: #e3e3e3;
+    background-color: #f8f8f8;
     padding: 0.9em 0 0.9em 0;
     border: 1px solid #d8d8d8;
 }
@@ -602,6 +614,43 @@ p.date-block-year {
     margin: 0;
     padding: 0;
 }
+
+div.image-autofix {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+div.image-autofix img {
+    max-width: 100%;
+}
+
+/*-- profile ---------------------------------------------------------*/
+div#profile-image {
+    margin: 2.0em 0 0 0;
+}
+
+p.profile-name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 90%;
+    color: #666;
+    margin-bottom: 0em;
+}
+
+p.profile-job {
+    text-align: center;
+    font-weight: bold;
+    font-size: 90%;
+    color: #84b60f;
+}
+
+div#profile-icons div.image-autofix {
+    margin: 0;
+}
+div#profile-icons img {
+    margin: 0.9em 0 0.9em 0;
+}
+
+
 
 
 
