@@ -108,6 +108,13 @@ ul.sidebar-menu li {
     margin-bottom: 0.9em;
 }
 
+ul.sidebar-menu-rss {
+    margin-left: 0;
+    font-weight: bold;
+    list-style-type: none;
+    text-align: center;
+}
+
 ul.paginator li {
     font-weight: bold;
     display: inline;
