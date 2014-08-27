@@ -23,7 +23,7 @@
           <div class="outline-block radius">
             <ul>
               {{# posts.categories.all }}
-                <li><a href="#{{ name }}">{{ name }} ({{ count }})</a></li>
+                <li><a href="#toc_{{ name }}">{{ name }} ({{ count }})</a></li>
               {{/ posts.categories.all }}
             </ul>
           </div>
@@ -32,7 +32,7 @@
 
         <div style="padding-top: 2.7em;"></div>
         {{# posts.categories.all }}
-        <h3 id="{{ name }}">{{ name }} ({{ count }})</h3>
+        <h3 id="toc_{{ name }}">{{ name }} ({{ count }})</h3>
         <ul>
           {{# posts?to_posts.sort }}
             <li>{{ date }} &raquo; <a href="{{ url }}">{{ title }}</a></li>

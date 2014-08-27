@@ -6,14 +6,14 @@
   {{/ javascripts.load }}
 
   <script type="text/javascript">
-    $('#mysidebar').affix();
+    //$('#mysidebar').affix();
   </script>
 
   <script type="text/javascript">
   // smooth scrool on click in-page link
   $(function(){
-      // # を含むアンカーをクリックした場合に処理
-      $('a[href*=#]').click(function() {
+      // #toc で始まるアンカーをクリックした場合に処理
+      $('a[href^=#toc]').click(function() {
           var speed    = 400; // msec;
           var href     = $(this).attr("href");
           var target   = $(href == "#" || href == "" ? 'html' : href);

@@ -1,0 +1,5 @@
+<TextureAtlas imagePath='atlas_common.png'>
+  <SubTexture name='screen_filter' x='0' y='0' width='320.0' height='480.0'/>
+  <SubTexture name='undo' x='322' y='0' width='64.0' height='64.0'/>
+  <SubTexture name='white' x='388' y='0' width='32.0' height='32.0'/>
+</TextureAtlas>

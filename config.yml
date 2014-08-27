@@ -32,7 +32,7 @@ _root:
 
 posts:
   sort: ["date", "desc"]
-  #permalink: "/:categories/:title/"
+  #permalink: "/:path/:filename/"
   summary_lines: 4
   latest: 5
   rss:

@@ -530,6 +530,18 @@ tr.head td{
     max-height: 420px;
 }
 
+.modal.play-flash-portrait {
+    /* SET THE WIDTH OF THE MODAL */
+    width: 700px;
+
+    /* CHANGE MARGINS TO ACCOMMODATE THE NEW WIDTH (original = margin: -250px 0 0 -280px;) */
+    margin: -400px 0 0 -350px;
+}
+
+.modal-body.play-flash-portrait {
+    max-height: 620px;
+}
+
 a.flash-modal-btn {
     float       : left;
     font-size   : 150%;
