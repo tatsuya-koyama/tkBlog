@@ -34,10 +34,10 @@ posts:
   sort: ["date", "desc"]
   #permalink: "/:path/:filename/"
   summary_lines: 4
-  latest: 5
+  latest: 10
   rss:
     enable: true
-    limit: 5
+    limit: 10
     # The url to prepend to the rss.xml feed, e.g.: /posts/rss.xml
     # Defaults to: "/<resource_name>/"
     # Always start with a forward slash, as ruhoh will internally respect any base_path you set.
@@ -47,7 +47,7 @@ posts:
     # The url your paginated pages will be located: e.g /posts/index/1, /posts/index/2, /posts/index/3
     # Always start with a forward slash, as ruhoh will internally respect any base_path you set.
     url: "/posts/pages/"
-    per_page: 5
+    per_page: 10
     # Set the custom page you want page#1 of your posts paginator to link to. (default: /posts/index/1)
     # Note the default is technically <paginator.url>/1 just as the other paginated pages.
     # It is up to you to display the paginator_pagination links somewhere in this case.
