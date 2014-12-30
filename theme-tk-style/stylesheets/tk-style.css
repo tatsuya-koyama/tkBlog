@@ -357,7 +357,7 @@ blockquote {
 blockquote p { line-height: 150%; }
 
 strong {
-    color: #822;
+    color: #338a30;
 }
 
 /*----- code ------------------------------------------------------*/
@@ -611,6 +611,15 @@ div.outline-block ul {
 }
 
 /*-----------------------------------------------------------*/
+div.shadow{
+    -moz-box-shadow:    3px 3px 6px #aaa; /* FireFox */
+    -webkit-box-shadow: 3px 3px 6px #aaa; /* webkit */
+    box-shadow:         3px 3px 6px #aaa;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=135,strength=3,enabled=true)";
+    filter: progid:DXImageTransform.Microsoft.Shadow(color=#000000,direction=135,strength=3,enabled=true); /* IE5.5+ */
+    background: #fff; /* IE Hack */
+}
+
 div.radius {
     border-radius:         10px; /* CSS3 */
     -webkit-border-radius: 10px; /* Safari, Chrome */
@@ -673,6 +682,38 @@ div#profile-icons img {
     margin: 0.9em 0 0.9em 0;
 }
 
+/*----- Amazon link ----------------------------------------*/
+div.azlink-box{
+    padding: 0.5em 0 0.5em 0;
+    font-size: 90%;
+}
+
+div.azlink-image{
+    margin-right: 1.0em;
+}
+
+div.azlink-detail{
+    font-size: 80%;
+}
+
+div.azlink-powered-date{
+    visibility: hidden;
+}
+
+div.azlink-link{
+    font-size: 80%;
+}
+
+div.box-indent{
+    border: 1px solid #999;
+    background-color: #f7f7f7;
+    width: 70%;
+    min-width: 30em;
+    max-width: 48em;
+    margin-left: 6em;
+    margin-bottom: 1.5em;
+    padding: 0.5em 0 0.5em 2em;
+}
 
 
 
