@@ -1,0 +1,8 @@
+<TextureAtlas imagePath='atlas_world.png'>
+  <SubTexture name='block_tall_2' x='0' y='0' width='128.0' height='256.0'/>
+  <SubTexture name='block_tall_1' x='130' y='0' width='128.0' height='256.0'/>
+  <SubTexture name='block_quad_1' x='0' y='258' width='128.0' height='128.0'/>
+  <SubTexture name='block_rect' x='260' y='0' width='128.0' height='128.0'/>
+  <SubTexture name='block_tri_1' x='130' y='258' width='128.0' height='128.0'/>
+  <SubTexture name='block_tri_2' x='260' y='258' width='128.0' height='128.0'/>
+</TextureAtlas>

@@ -1,0 +1,11 @@
+<TextureAtlas imagePath='atlas_effect_brush.png'>
+  <SubTexture name='color_brush_7' x='0' y='0' width='180.0' height='96.0'/>
+  <SubTexture name='color_brush_9' x='0' y='98' width='150.0' height='114.0'/>
+  <SubTexture name='color_brush_6' x='0' y='214' width='140.0' height='121.0'/>
+  <SubTexture name='color_brush_2' x='0' y='337' width='150.0' height='109.0'/>
+  <SubTexture name='color_brush_8' x='152' y='98' width='130.0' height='115.0'/>
+  <SubTexture name='color_brush_4' x='152' y='215' width='122.0' height='120.0'/>
+  <SubTexture name='color_brush_5' x='152' y='337' width='100.0' height='140.0'/>
+  <SubTexture name='color_brush_3' x='284' y='98' width='108.0' height='110.0'/>
+  <SubTexture name='color_brush_1' x='394' y='98' width='100.0' height='102.0'/>
+</TextureAtlas>
