@@ -46,6 +46,13 @@ div#pre-footer {
     background-color: #ccc;
 }
 
+ul.social-btns {
+    margin: 0;
+}
+ul.social-btns li {
+    display: inline-block;
+}
+
 #novel {
     padding-top: 0px;
     position:relative;
@@ -278,7 +285,7 @@ h4.footer_caption{
     color: #fff;
     font-weight: normal;
     border: none;
-    margin: 0.5em 0 0.5em 0;
+    margin: 0.5em 0 0.1em 0;
     background-color: transparent;
     padding: 0;
 }
