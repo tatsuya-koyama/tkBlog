@@ -365,7 +365,7 @@ blockquote {
 blockquote p { line-height: 150%; }
 
 strong {
-    color: #338a30;
+    color: #3b9e6f;
 }
 
 /*----- code ------------------------------------------------------*/
@@ -511,7 +511,7 @@ table.mystyle{
 }
 
 table.mystyle tr.color1{ background-color: #f7f7f7; }
-table.mystyle tr.color2{ background-color: #e7f3e7; }
+table.mystyle tr.color2{ background-color: #e8f2e6; }
 table.mystyle tr.color1 td.left{ font-weight: bold; color: 444; }
 table.mystyle tr.color2 td.left{ font-weight: bold; color: 444; }
 
